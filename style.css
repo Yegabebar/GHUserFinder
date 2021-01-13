@@ -1,4 +1,5 @@
 body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(41, 41, 41);
     display: flex;
     justify-content: center;
@@ -8,11 +9,26 @@ body{
 
 h1{
     font-style: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
 }
 
 .container{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(207, 207, 207);
     color:black;
+    border-radius: 1em;
+}
+
+img{
+    position: static;
+    overflow: visible;
+    margin-top: -5em;
+    padding: 1em;
+    display: flex;
+    width:10em;
+    height: auto;
+    border-radius: 50%;
 }

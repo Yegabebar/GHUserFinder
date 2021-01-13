@@ -12,33 +12,31 @@ async function getUser(){
 
     //We create the elements 
     var div = document.createElement("div");
+    var img = document.createElement("img");
+    var nameP = document.createElement("p");
     var followersP = document.createElement("p");
     var reposP = document.createElement("p");
     var followingP = document.createElement("p");
     
     //Assign a text to it
-    followersP.textContent = followers;
-    
-    reposP.textContent = repos;
-    followingP.textContent = following;
-
-    
-    console.log("Valeur stockée "+followersP);
-    //followers, following, name, public_repos, avatar_url
+    nameP.textContent = name;
+    img.innerHTML = '<img src="'+avatar_url+'" alt="Profile pic"></img>';
+    followersP.innerHTML = '<p>Followers: '+followers+'</p>';
+    reposP.innerHTML = '<p>Repos: '+public_repos+'</p>';
+    followingP.innerHTML = '<p>Following: '+following+'</p>';
     
     //Add these elements to the new div
-    div.innerHTML.value+=followersP+'<br>';
-    div.innerHTML.value+=reposP+'<br>';
-    div.innerHTML.value+=followingP;
-    
-    console.log("Valeur dans div avant ajout dans HTML: "+div);
+    div=img.innerHTML;
+    div+=nameP.innerHTML;
+    div+=followersP.innerHTML;
+    div+=reposP.innerHTML;
+    div+=followingP.innerHTML;
 
     //Then add the div to the HTML page
-    container.innerHTML=div.followersP.innerHTML;
-    container.innerHTML=div.reposP.innerHTML;
-    container.innerHTML=div.followingP;
-    //Then display the informations to the DOM in a newly-created div
-    console.log('test: '+div.followersP);
+    result.innerHTML+=div;
+    // document.querySelector("div").style.backgroundColor = 'rgb(207, 207, 207)';
+    // document.querySelector("div").style.color = 'black';
+    
 
         
     
@@ -49,7 +47,7 @@ var url = "https://api.github.com/users/yegabebar";
 console.log('URL TO SEND: '+url);
 var input = document.querySelector('#search');
 var form = document.querySelector('#form');
-var container = document.querySelector('#container'); 
+var result = document.querySelector('#result'); 
 
 form.addEventListener('submit', (e) => {
     e.preventDefault(); // Prevents the browser to redirect to another page
