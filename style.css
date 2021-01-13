@@ -12,6 +12,17 @@ h1{
     color:white;
 }
 
+img{
+    position: static;
+    overflow: visible;
+    margin-top: -5em;
+    padding: 1em;
+    display: flex;
+    width:10em;
+    height: auto;
+    border-radius: 50%;
+}
+
 .container{
     margin-top: 5em;
     display: flex;
@@ -22,13 +33,6 @@ h1{
     border-radius: 1em;
 }
 
-img{
-    position: static;
-    overflow: visible;
-    margin-top: -5em;
-    padding: 1em;
-    display: flex;
-    width:10em;
-    height: auto;
-    border-radius: 50%;
+.container p{
+    margin: 0.2em;
 }
