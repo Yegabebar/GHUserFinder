@@ -1,15 +1,32 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(112, 16, 16, 0.787);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-h1{
-    font-style: bold;
-    color:white;
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 0.7em;
+    margin: 0.1em;
+    border-radius: 0.5em;
+}
+
+.container{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+    color:black;
+    border-radius: 1em;
 }
 
 img{
@@ -23,16 +40,23 @@ img{
     border-radius: 50%;
 }
 
-.container{
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(207, 207, 207);
-    color:black;
-    border-radius: 1em;
+h1{
+    margin-top: 4em;
+    font-size: 3.5em;
+    font-style: bold;
+    color:white;
 }
 
-.container p{
+#userName{
+    font-size: 1.5em;
+}
+
+#searchResult{
+    align-items: center;
+    padding-bottom: 1em;
+}
+#searchResult div{
+    display: flex;
+    justify-content: center;
     margin: 0.2em;
 }
